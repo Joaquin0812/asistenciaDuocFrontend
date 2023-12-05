@@ -1,0 +1,7 @@
+{
+  "name": "asistenciavivo",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

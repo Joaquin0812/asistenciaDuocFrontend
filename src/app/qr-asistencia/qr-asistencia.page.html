@@ -1,0 +1,21 @@
+<ion-header [translucent]="true">
+  <ion-img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/Logo_DuocUC.svg/2560px-Logo_DuocUC.svg.png"></ion-img>
+  <ion-toolbar>
+    <ion-title>QR Asistencia</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="medium">QR Asistencia</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <div id="container">
+    <ion-img src="https://upload.wikimedia.org/wikipedia/commons/d/d7/Commons_QR_code.png"></ion-img>
+
+    <form (ngSubmit)="submitBack()">
+      <ion-button type="submit" color="tertiary" expand="full">Volver</ion-button>
+      </form>
+  </div>
+</ion-content>

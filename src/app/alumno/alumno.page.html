@@ -1,0 +1,15 @@
+<ion-header [translucent]="true">
+  <ion-img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/Logo_DuocUC.svg/2560px-Logo_DuocUC.svg.png"></ion-img>
+  <ion-toolbar>
+    <ion-title>BIENVENIDO {{alumno.nombre}}</ion-title>
+  </ion-toolbar>
+</ion-header>
+<div id="container">
+<!-- botón para abrir cámara -->
+  <ion-button (click)="submitCamara()" color="tertiary" expand="full">Escanear QR</ion-button>
+
+    <!-- botón para volver al login -->
+  <ion-button (click)="submitForm()" color="tertiary" expand="full">Cerrar Sesión</ion-button>
+
+  </div>
+
