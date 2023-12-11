@@ -24,7 +24,7 @@ export class ListaDeAlumnosPage implements OnInit {
       method: 'GET'
     };
     
-    fetch(`https://x9079c3d-3000.brs.devtunnels.ms/lista?correo=${correo}`, requestOptions)
+    fetch(`https://computational-curtis-linking-extensions.trycloudflare.com/lista?correo=${correo}`, requestOptions)
       .then(async response => {
         const lista = await response.json()
         console.log(lista);

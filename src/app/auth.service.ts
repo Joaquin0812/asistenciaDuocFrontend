@@ -66,7 +66,7 @@ export class AuthService {
       body: raw
     };
 
-    const response = await fetch("https://x9079c3d-3000.brs.devtunnels.ms/login", requestOptions)
+    const response = await fetch("https://computational-curtis-linking-extensions.trycloudflare.com/login", requestOptions)
     if (response) {
       const estado = response.status
       console.log(response);
