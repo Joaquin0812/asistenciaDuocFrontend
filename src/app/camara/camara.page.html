@@ -7,6 +7,9 @@
 <ion-content>
   <ion-list>
     <!-- some.component.html -->
-    <zxing-scanner [formats]="allowedFormats"></zxing-scanner>
+    <zxing-scanner 
+    [formats]="allowedFormats"
+    (scanSuccess)="tuEvento($event)"
+    ></zxing-scanner>
   </ion-list>
 </ion-content>

@@ -27,3 +27,9 @@
   #container a {
     text-decoration: none;
   }
+
+  :host zxing-scanner::ng-deep ion-list {
+    max-height: 70vh;
+    width: 100vw;
+    object-fit: contain;
+  }

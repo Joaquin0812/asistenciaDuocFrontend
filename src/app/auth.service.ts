@@ -8,6 +8,7 @@ import { NavController } from '@ionic/angular';
 })
 
 export class AuthService {
+
   constructor(public nav: NavController) { }
 
   login(username: string, password: string): Promise<boolean> {
@@ -73,7 +74,11 @@ export class AuthService {
 
       if (estado == 200) {
         console.log("estado es igual 200");
-        return await response.json()
+        const als=await response.json();
+        localStorage.setItem("alu",JSON.stringify(als))
+        console.log(als);
+        return als
+
       }
     }
     return null
